@@ -1,0 +1,117 @@
+.comparison {
+  padding-top: 35px;
+  padding-bottom: 170px;
+  background: $bg-blue url(../img/clouds_tab.png) bottom center / 100% no-repeat;
+  @media (min-width: $screen-s) {
+    padding-bottom: 240px;
+  }
+  @media (min-width: $screen-m) {
+    padding-top: 80px;
+    padding-bottom: 375px;
+    background-image: url(../img/clouds_tab.png);
+  }
+  @media (min-width: $screen-lg) {
+    padding-bottom: 400px;
+  }
+
+  &__title {
+    padding-bottom: 55px;
+    text-align: center;
+    color: $white;
+    font: $h2-l-font;
+    letter-spacing: 0.2vw;
+    @media (min-width: $screen-lg) {
+      font-size: 77px;
+    }
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    img {
+      height: 23vw;
+      max-height: 311px;
+      @media (min-width: $screen-lg) {
+        height: 20vw;
+        max-height: 200px;
+      }
+    }
+    h3 {
+      margin: 15px 0 30px;
+      text-align: center;
+      color: $white;
+      font: $h3-font;
+      @media (min-width: $screen-lg) {
+        font-size: 52px;
+      }
+    }
+  }
+
+  &__attr {
+    display: flex;
+    line-height: 1;
+    flex-direction: column;
+    font-size: 2.6vw;
+    @media (min-width: $screen-lg) {
+      font-size: 41px;
+    }
+
+    p {
+      line-height: 1;
+      color: $orange2;
+      text-align: left;
+    }
+    span {
+      padding: 35px 65px;
+      margin: 15px 0;
+      color: $white;
+      background: $orange2;
+      border-radius: 8px;
+      text-align: center;
+      @media (max-width: $screen-m) {
+        padding: 25px 45px;
+      }
+    }
+  }
+  .company-slogan,
+  .company-name {
+    color: $white;
+    text-align: center;
+  }
+
+  .company-slogan {
+    font: $h3-font;
+
+    @media (max-width: $screen-m) {
+      font-size: 25px;
+    }
+    @media (min-width: $screen-lg) {
+      font-size: 52px;
+    }
+    @media (min-width: $screen-xs) {
+      padding-top: 65px;
+      padding-bottom: 35px;
+    }
+  }
+
+  .company-name {
+    font: $h2-l-font;
+    @media (max-width: $screen-m) {
+      font-size: 37px;
+    }
+    @media (min-width: $screen-lg) {
+      font-size: 72px;
+    }
+  }
+}
